@@ -27,7 +27,7 @@ Cada tarea tendra un id, el metodo de entrega sera el siguiente:
 
             /*
                 Tarea Corta 4
-                Estudiante: [Your Name]
+                Estudiante: [Jose Carlos Acuña Rojas]
 
                 Enunciado:
                 Haga una funcion que identifique si una cadena de caracteres es un palindromo. 
