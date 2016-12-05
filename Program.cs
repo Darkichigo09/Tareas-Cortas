@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tarea_Corta_10
+namespace Tarea_Corta_1
 {
     class Program
     {
         static void Main(string[] args)
-        {/*
+        {
+            /*
 Tarea Corta
 Las tareas cortas consisten de resolver simples problemas de programacion, para buscar que los estudiantes 
 desarrollen su logica de programacion y logica matematica.
@@ -25,23 +26,27 @@ Cada tarea tendra un id, el metodo de entrega sera el siguiente:
 */
 
             /*
-                Tarea Corta 10
+                Tarea Corta 1
                 Estudiante: [Jose Carlos Acuna Rojas]
 
                 Enunciado:
-                Inversion de un string: Al recibir un string S, retornar un string cuyas palabras estan invertidas, sin invertir el orden de las palabras.
-                "The Sky is Blue" -> "ehT ykS si eulB"
+                Escriba una funcion que retorne el elemento mas grande de una lista no ordenada	
             */
 
-            String chain = "";
-            String word = "The Sky is blue";
-            int t = word.Length;//varible que me recorre el string
-            for (int i = t - 1; i >= 0; i--)//ciclo que me descompone las palabras del string
-            {
-                chain = chain + word.Substring(i, 1);//lo rearma pero de manera invertida
-            }
-            Console.WriteLine(chain);//impresion del ejemplo
-            Console.ReadLine();
+           
+            //  Dentro de un array de i cantidad de numeros dentro del array la funcion tomara el elemento mayor,
+            //mostrara la lista y tomara el numero mayor y lo imprime, lo hice de esta manera ya que vi que era la solucion mas optima
+            //ya que incluye poco codigo y utiliza la  libreria collection que esta por defecto al abrir un nuevo poryecto, y no es complicado
+            //otra solucion mas larga seria asignar a una variable int un numero en este caso 1 y que con un for se recorra todo un arreglo y si el numero en alguna posicion es mayor al int que lo asigne, y asi por todo el array.
+            //Your code starts here
+
+            int[] list_number = new int[] { 3, 4, 5, 6, 22, 33, 22, 11, 23, 345, 4535, 123, 233, 34, 3 };
+            Console.WriteLine("La lista de numeros es la siguiente:", list_number[0]);
+                Array.Sort(list_number);
+                Array.Reverse(list_number);
+                Console.WriteLine("El numero mayor es: " + list_number[0]);
+                Console.WriteLine();
+            Console.ReadKey();
         }
     }
 }
